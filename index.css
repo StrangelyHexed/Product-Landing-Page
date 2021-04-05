@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #f9d976;
+  /* background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(217, 144, 88);
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#header-title {
+  display: flex;
+}
+
+#header-img {
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+#title {
+  font-family: "Lobster", cursive;
+}
+
+.navbar {
+  margin-right: 100px;
+}
+
+#nav-bar ul li {
+  text-align: right;
+  list-style: none;
+  display: inline;
+  margin-left: 10px;
+}
+
+#qoute {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 150%;
+}
+
+h3 {
+  background-color: orange;
+  text-align: center;
+}
+
+#history,
+#nutrition,
+#cow,
+#goat,
+#sheep,
+#email-container {
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #fffcf9;
+  background-image: linear-gradient(150deg, #f8e2cc 0%, #ffd166 75%);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+#history {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: auto;
+  max-height: 400px;
+}
+
+.history-video {
+  border-right: thick solid black;
+  padding-right: 50px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#history-text {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#nutrition {
+  margin: 5% 10% 5% 10%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#types-of-cheese {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#cow,
+#goat,
+#sheep {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.type-name {
+  text-align: center;
+  background-color: orange;
+  font-weight: bold;
+}
+
+.types ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.animal_photo img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#email-container {
+  margin: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  overflow: auto;
+}
