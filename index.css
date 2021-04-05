@@ -44,6 +44,14 @@ body {
   margin-left: 10px;
 }
 
+@media (max-width: 600px) {
+  #nav-bar ul li {
+    text-align: right;
+    list-style: none;
+    display: block;
+  }
+}
+
 #qoute {
   font-family: "Dancing Script", cursive;
   text-align: center;
@@ -69,30 +77,71 @@ h3 {
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
 }
 
-#history {
-  display: flex;
-  flex-direction: row;
-  margin-left: 5%;
-  margin-right: 5%;
-  overflow: auto;
-  max-height: 400px;
+@media (max-width: 900px) {
+  #history {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow-y: auto;
+    /* max-height: 400px; */
+  }
+
+  #history-video {
+    border-bottom: thick solid black;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #history-text {
+    margin-top: 5%;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    max-height: 400px;
+    overflow-y: auto;
+  }
 }
 
-.history-video {
-  border-right: thick solid black;
-  padding-right: 50px;
-  padding-left: 50px;
-  display: flex;
-  align-items: center;
+@media (min-width: 901px) {
+  #history {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: auto;
+    max-height: 500px;
+  }
+  #history-video {
+    border-right: thick solid black;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+  }
+
+  #history-text {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    max-height: 400px;
+    overflow-y: auto;
+  }
 }
 
-#history-text {
-  padding-left: 50px;
-  padding-right: 50px;
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  max-height: 400px;
-  overflow-y: auto;
+@media (max-width: 497px) {
+  #video {
+    width: 200px;
+    height: auto;
+  }
+
+  #history-text {
+    font-size: smaller;
+  }
 }
 
 #nutrition {
